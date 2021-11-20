@@ -1,0 +1,39 @@
+.style-logo{
+    width: 13rem;
+    height: 7rem;
+}
+
+.style-button-login{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 15px;
+}
+
+.style-card-login{
+    background-color: rgba(229, 252, 238,0.9);
+}
+
+.masthead-login{
+    min-height: 25rem;
+    width: 100vw;
+    height: 100vh;
+    background: url('/img/login_background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.style-title-login{
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    font-size: 5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.style-crear-login{
+    color: darkgrey;
+}
+
+.style-crear-login:hover{
+    color: black;
+}
