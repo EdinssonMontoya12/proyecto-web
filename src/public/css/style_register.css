@@ -1,0 +1,26 @@
+.masthead-register{
+    min-height: 25rem;
+    width: 100vw;
+    height: 100vh;
+    background: url('/img/dere.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.style_colum_register{
+    background-color: rgba(229, 252, 238,0.9);
+    width: 35rem;
+}
+
+.style-div-form-register{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 2rem;
+}
+
+.style-tittle-register{
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+    font-family: 'Ubuntu', sans-serif;
+}

@@ -1,0 +1,51 @@
+{{> navigation}}
+<script>
+    const reserva = {{id_reserva}}
+</script>
+<div class="container">
+    <div class="row">
+        <form action="/reserve/add/service/{{id_reserva}}" method="post">
+            <div class="form-group">
+                <select name="id_servicio" class="form-select" aria-label="Default select example">
+                   <option selected>Selecciona un servicio</option>
+                   {{#each services}}
+                        <option value="{{id}}">{{nombre}}</option>
+                   {{/each}}
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="date" name="fecha_reserva" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="hora_reserva" class="form-control" placeholder="Hora reserva">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success">Agregar servicio</button>
+            </div>
+        </form>
+    </div>
+    <div class="row">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each servicesReserva}}
+                    <tr>
+                        <th>{{nombre}}</th>
+                        <th>{{fecha_reserva}}</th>
+                        <th>{{hora_reserva}}</th>
+                        <th>{{costo}}</th>
+                        <th><a href="/delete/service/reserve/{{id}}/{{id_reserva}}">eliminar</a></th>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+    <a href="/profile" class="btn btn-success">aceptar</a>
+</div>

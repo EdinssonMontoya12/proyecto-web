@@ -52,6 +52,7 @@ app.use((req, res, next) => {
 app.use(require('./routes/index'))
 app.use(require('./routes/about'))
 app.use(require('./routes/authetication'))
+app.use(require('./routes/bookings'))
 
 //Archivos publicos
 app.use(express.static(path.join(__dirname, 'public')))
