@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root{
+  --fondo: #ffffff;
+  --colorText: #000000;
+}
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a, button, li{
+  font-size: 23px;
+  text-decoration: none;
+}
+.contenedor{
+  display: grid;
+  margin: 0 5%;
+  grid-template-areas:"header"
+                      "main"
+                      "footer";
+  grid-gap: 15px;
+}
+.hamb-menu{
+  display: none;
+}
+.nav-menu ul{
+  margin: auto 0 ;
+}
+.nav-menu ul li{
+  list-style: none;
+  float: left;
+  margin-right: 25px;
+}
+
+.nav-menu ul li a{
+  text-decoration: none;
+  color: colorText;
+}
+.nav-menu ul li:nth-child(4){
+  margin-right: 0; /*Para quitar el padding del ultimo item del navbar*/
+}
+.btnReserva{
+  color: #ffffff;
+  background-color: #2671d6;
+  padding: 9px 25px;
+  border: none;
+  line-height: normal;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+}
+
+
+.header{
+  display: grid;
+  grid-area: header;
+  grid-template-areas: "logo navmenu";
+}
+
+.main{
+  display: grid;
+  grid-area: main;
+  grid-template-areas:"carrusel"
+                      "servicios";
+  grid-gap: 15px;
+}
+
+.logo{
+  grid-area: logo;
+  /**Se haran correciones cuando metan la imagen original*/
+}
+.logo img{
+  height: 100px;
+  width: auto;
+}
+
+.nav-menu{
+  display: flex;
+  line-height: 60px;
+  align-items: center;
+  justify-content: flex-end;
+  grid-area: navmenu;
+}
+
+.carrusel{
+  grid-area: carrusel;
+}
+
+.servicios{
+  display: grid;
+  grid-area: servicios;
+  /* Hago grid en area para que al momento de disminur la pantalla el poder cambiar esas areas haciendolo resposive */
+  grid-template-areas:"servicio1 servicio1"
+                      "servicio2 servicio2"
+                      "servicio3 servicio3";
+  grid-gap: 20px;
+}
+.servicios > div{
+  display: grid;
+  grid-template-areas:"imagen texto";
+  border: 1px solid rgba(0,0,0,.125);
+  grid-gap: 15px;
+}
+
+#s1{ grid-area: servicio1; }
+#s2{ grid-area: servicio2; }
+#s3{ grid-area: servicio3; }
+
+
+.imgServicio{
+  margin: auto 0;
+  grid-area: imagen;
+}
+
+.card .infoServicio{
+  grid-area: texto;
+}
+.infoServicio .info{
+  padding-left:  10px;
+}
+.titleService{
+  padding: 5px 0;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(179, 214, 194);
+  font-size: 3vw;
+}
+
+
+.wrapIcon a{
+  margin-right: 20px;
+  font-size: 35px;
+}
+@media screen and (max-width: 1000px) {
+  .servicios  > div{
+    grid-template-areas:"texto"
+                        "imagen";
+  }
+  .imgServicio{
+    margin: 0 auto;
+  }
+  .nav-menu{
+    display: none;
+  }
+  .hamb-menu{
+    margin: auto 0;
+    color: rgb(175, 209, 241);
+    text-align: right;
+    font-size: 40px;
+    cursor: pointer;
+    display: block;
+  }
+}
