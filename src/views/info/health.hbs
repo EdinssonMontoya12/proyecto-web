@@ -1,0 +1,27 @@
+<div class="container">
+{{>navigation}}
+    <div class = "health">
+        <!-- Indice de masa corporal (ICM) = Peso en Kilogramos / (Altura en metros) -->
+        <h3>Calcula indice de masa corportal (IMC)</h3>
+        <div class = "form-imc">
+            <input class="form-control" id="altura" type="number" placeholder="Ingrese su Altura en metros" aria-label="default input example">
+            <input class="form-control" id="peso" type="number" placeholder="Ingrese su Peso en kilogramos" aria-label="default input example">
+            <button id="IMC" type="button" class="btn btn-success">Ver IMC</button>
+        </div>
+        <div id="xxx" class = "result-imc">
+            
+        </div>
+        <!-- Indice de cintura y cadera (ICC) = medida cintura en centimetros  / medida cadera en centimetros -->
+        <h3>Calcula indice de cintura y cadera (ICC)</h3>
+        <div class = "form-icc">
+            <input class="form-control" id="cintura" type="number" placeholder="Ingrese medida de cintura en centimetros" aria-label="default input example">
+            <input class="form-control" id="cadera" type="number" placeholder="Ingrese medida de cadera en centimetros" aria-label="default input example">
+            <button id="ICC" type="button" class="btn btn-success">Ver ICC</button>
+        </div>
+        <div class = "result-icc toggle-icc">
+            asdfasdfasdf
+        </div>
+    </div>
+
+{{>footer}}
+</div>

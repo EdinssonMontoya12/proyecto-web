@@ -11,7 +11,7 @@
   padding: 0;
 }
 a, button, li{
-  font-size: 23px;
+  font-size: 18px;
   text-decoration: none;
 }
 .contenedor{
@@ -38,9 +38,9 @@ a, button, li{
   text-decoration: none;
   color: colorText;
 }
-.nav-menu ul li:nth-child(4){
+/* .nav-menu ul li:nth-child(4){
   margin-right: 0; /*Para quitar el padding del ultimo item del navbar*/
-}
+/* }*/
 .btnReserva{
   color: #ffffff;
   background-color: #2671d6;
@@ -132,7 +132,7 @@ a, button, li{
   margin-right: 20px;
   font-size: 35px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .servicios  > div{
     grid-template-areas:"texto"
                         "imagen";

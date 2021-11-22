@@ -56,6 +56,7 @@ app.use(require('./routes/bookings'))
 app.use(require('./routes/ubication'))
 app.use(require('./routes/galery'))
 app.use(require('./routes/service'))
+app.use(require('./routes/health'))
 
 
 //Archivos publicos
