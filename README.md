@@ -10,7 +10,7 @@
 1. [Características 👨‍💻](#características-)
 2. [Contenido del proyecto 📋](#contenido-del-proyecto-)
 3. [Tecnologías 👾](#tecnologías-)
-4. [IDE ⚙️](#ide-%EF%B8%8F)
+4. [IDE y Herramientas⚙️](#ide-%EF%B8%8F)
 5. [Instalación 🛠️](#instalación-%EF%B8%8F)
 6. [Demo 📲](#demo-)
 7. [Autor(es) ✒️](#autores-%EF%B8%8F)
@@ -42,18 +42,20 @@ permite generar reservas, logearse y al administrador agregar y borrar servicios
 - [![HTML5](https://img.shields.io/badge/HTML5-CSS-orange)](https://esdima.com/que-es-html-y-css/#:~:text=Uno%20de%20sus%20componentes%20m%C3%A1s,hacia%20su%20dise%C3%B1o%20y%20apariencia.)
 - [![Node](https://img.shields.io/badge/Node-yellow)](https://nodejs.org/es/about/)
 - [![JavaScript](https://img.shields.io/badge/JavaScript-yellow)](https://developer.mozilla.org/es/docs/Web/JavaScript)
-
+- [![Mysql](https://img.shields.io/badge/Mysql-Workbench-blue)](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
 
 ------------------------------------------
-#### IDE ⚙️
+#### IDE y Herramientas⚙️
 ###### El proyecto se desarrolla con las herramientas:
 |   	NOMBRE|   	DESCRIPCIÓN|    ICONO|
 |---	|---	|---   |
 |   	[Visual Studio Code](https://visualstudio.microsoft.com/es/) | 	Microsoft Visual Studio es un entorno de desarrollo integrado (IDE, por sus siglas en inglés) para Windows y macOS. Es compatible con múltiples lenguajes de programación, tales como C++, C#, Visual Basic .NET, F#, Java, Python, Ruby y PHP, al igual que entornos de desarrollo web, como ASP.NET MVC, Django, etc., a lo cual hay que sumarle las nuevas capacidades en línea bajo Windows Azure en forma del editor Monaco. ([Wikipedia, 2021](https://es.wikipedia.org/wiki/Microsoft_Visual_Studio)) [Descargar](https://visualstudio.microsoft.com/es/)|<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Visual_Studio_Icon_2019.svg/125px-Visual_Studio_Icon_2019.svg.png" height="50px" alt="imagen Android Studio">| 
 |   	[Boostrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/) |  Bootstrap es una biblioteca multiplataforma o conjunto de herramientas de código abierto para diseño de sitios y aplicaciones web. Contiene plantillas de diseño con tipografía, formularios, botones, cuadros, menús de navegación y otros elementos de diseño basado en HTML y CSS, así como extensiones de JavaScript adicionales. A diferencia de muchos frameworks web, solo se ocupa del desarrollo front-end. ([Wikipedia, 2021](https://es.wikipedia.org/wiki/Bootstrap_(framework))) [Descargar](https://getbootstrap.com/docs/4.0/getting-started/download/)|<img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" height="50px" alt="imagen Boostrap">|
-|     [Express](https://getbootstrap.com/docs/5.1/getting-started/introduction/) |  Express.js , o simplemente Express , es un frameWork web back-end para Node.js , lanzado como software gratuito y de código abierto bajo la licencia MIT . Está diseñado para crear aplicaciones web y API.  Se le ha llamado el estándar de facto marco servidor para Node.js.)) ([Wikipedia, 2021](https://en.wikipedia.org/wiki/Express.js)) [Descargar](https://visualstudio.microsoft.com/es/)|<img src="https://blog.amt.in/wp-content/uploads/2017/12/e16da876-c2fd-4eb8-ae72-4b193c534938-Edited.png" height="50px" alt="imagen de Express">|
-|     [Node.js](https://getbootstrap.com/docs/5.1/getting-started/introduction/) |  Node.js es un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor (pero no limitándose a ello) basado en el lenguaje de programación JavaScript, asíncrono, con E/S de datos en una arquitectura orientada a eventos y basado en el motor V8 de Google. Fue creado con el enfoque de ser útil en la creación de programas de red altamente escalables, como por ejemplo, servidores web. Fue creado por Ryan Dahl en 2009 y su evolución está apadrinada por la empresa Joyent, que además tiene contratado a Dahl en plantilla.)) ([Wikipedia, 2021](https://en.wikipedia.org/wiki/Express.js)) [Descargar](https://nodejs.org/es/download/)|<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/200px-Node.js_logo.svg.png" height="50px" alt="imagen de Node.js">|
+|     [Express](https://expressjs.com/es/) |  Express.js , o simplemente Express , es un frameWork web back-end para Node.js , lanzado como software gratuito y de código abierto bajo la licencia MIT . Está diseñado para crear aplicaciones web y API.  Se le ha llamado el estándar de facto marco servidor para Node.js.)) ([Wikipedia, 2021](https://en.wikipedia.org/wiki/Express.js)) [Descargar](https://expressjs.com/es/starter/installing.html)|<img src="https://blog.amt.in/wp-content/uploads/2017/12/e16da876-c2fd-4eb8-ae72-4b193c534938-Edited.png" height="50px" alt="imagen de Express">|
+|     [Node.js](https://nodejs.org/es/) |  Node.js es un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor (pero no limitándose a ello) basado en el lenguaje de programación JavaScript, asíncrono, con E/S de datos en una arquitectura orientada a eventos y basado en el motor V8 de Google. Fue creado con el enfoque de ser útil en la creación de programas de red altamente escalables, como por ejemplo, servidores web. Fue creado por Ryan Dahl en 2009 y su evolución está apadrinada por la empresa Joyent, que además tiene contratado a Dahl en plantilla.)) ([Wikipedia, 2021](https://es.wikipedia.org/wiki/Node.js) [Descargar](https://nodejs.org/es/download/)|<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/200px-Node.js_logo.svg.png" height="50px" alt="imagen de Node.js">|
+|     [Heroku](https://www.heroku.com/) |  Heroku es una plataforma como servicio (PaaS) de computación en la Nube que soporta distintos lenguajes de programación.)) ([Wikipedia, 2021](https://es.wikipedia.org/wiki/Heroku)) [Descargar](https://devcenter.heroku.com/articles/heroku-cli)|<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Heroku_logo.svg/245px-Heroku_logo.svg.png" height="50px" alt="imagen de Heroku">|
+|     [Mysql](https://www.mysql.com/) |  MySQL es un sistema de gestión de bases de datos relacional desarrollado bajo licencia dual: Licencia pública general/Licencia comercial por Oracle Corporation y está considerada como la base de datos de código abierto más popular del mundo, y una de las más populares en general junto a Oracle y Microsoft SQL Server, todo para entornos de desarrollo web.)) ([Wikipedia, 2021](https://es.wikipedia.org/wiki/MySQL)) [Descargar](https://dev.mysql.com/downloads/workbench/)|<img src="https://1000marcas.net/wp-content/uploads/2020/11/MySQL-logo.png" height="50px" alt="imagen de Mysql">|
 
 ------------------------------------------
 #### Instalación 🛠️
@@ -65,7 +67,7 @@ software necesario para el correcto funcionamiento de la pagina.
 
 ```
 1) Instalar Mysql y node.js.
-2) Abrir el proyecto en el IDE de su preferencia (Se recoimenda Visual Studio Code).
+2) Abrir el proyecto en el IDE de su preferencia (Se recomienda Visual Studio Code).
 3) En caso de errores instalar las dependencias y hacer npm init en el terminal.
 4) Ejecutar en el terminal "npm run dev" para correr la pagina en el servidor local.
 5) En su navegador determinado escriba "localhost:3500" pues el puerto  por defecto es el 3500.
@@ -94,5 +96,7 @@ Página web desarrollada para la materia de Programación Web del [Programa de I
 ###### Booostrap. (2021). Wikipedia, La enciclopedia libre, desde https://es.wikipedia.org/wiki/Bootstrap_(framework).
 ###### Express. (2021). Wikipedia, La enciclopedia libre, desde https://en.wikipedia.org/wiki/Express.js.
 ###### Node.js. (2021). Wikipedia, La enciclopedia libre, desde https://es.wikipedia.org/wiki/Node.js.
+###### Heroku (2021). Wikipedia, La enciclopedia libre, desde https://es.wikipedia.org/wiki/Heroku).
+###### Mysql (2021). Wikipedia, La enciclopedia libre, desde https://es.wikipedia.org/wiki/MySQL.
 
 ------------------------------------------
