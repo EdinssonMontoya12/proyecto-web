@@ -26,16 +26,20 @@ permite generar reservas, logearse y al administrador agregar y borrar servicios
 #### Contenido del proyecto 📋
 |ARCHIVO|DESCRIPCIÓN|
 |-----------|---------------|
-|[main.hbs](/views/layoutsmain.hbs)| Contiene la estructura de todas las paginas del proyecto, ademas contiene los linkeos de los estilos y los scripts|
+|[modulos de node](node_modules)| Contiene las funciones que las aplicaciones externas pueden usar .|
+|[main.hbs](/views/layoutsmain.hbs)| Contiene la estructura de todas las paginas del proyecto, ademas contiene los linkeos de los estilos y los scripts.|
 |[partials](/views/partials)|Contiene los trozs de codigo que se reutilizaran, como el nav bar, footer y las alertas.|
 |[routes](/routes)| Contiene las rutas de todas las pestañas que permite su concexion y funcionamiento con express y node.je .|
 |[css](/css)| Contiene los diferentes estilos utilizados en el proyecto .|
 |[img](/img)| Contiene las diferentes imagenes utilizados en el proyecto .|
-|[js](/js)| Contiene las funciones extras necesarias para el funcionamiento de la pagina.) .|
+|[js](/js)| Contiene las funciones extras necesarias para el funcionamiento de la pagina. .|
 |[info](/views/info)| Contiene las pestañas que muestran informacion al usuario .|
 |[booking](/views/booking)| Contiene la pestaña de registro .|
-|[Auth](/views/auth)| Contiene las pestañas que necesitan autenticación (logearse / registrarse para funcionar.) .|
-|[lib](/lib)| Contiene las funciones necesarias para el funcionamiento de la pagina que necesitan el uso de espress.) .|
+|[Auth](/views/auth)| Contiene las pestañas que necesitan autenticación (logearse / registrarse para funcionar) .|
+|[lib](/lib)| Contiene las funciones necesarias para el funcionamiento de la pagina que necesitan el uso de express. .|
+|[keys.js](keys.js)| Conecta la base de datos con heroku .|
+|[index.js](index.js)| Configura el uso de express , sus modulos, rutas variables handelbars, etc .|
+|[database.js](database.js)| Tiene configuraciones basicas de la base de datos y sus mensajes de error .|
 
 ------------------------------------------
 #### Tecnologías 👾
