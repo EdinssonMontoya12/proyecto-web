@@ -34,7 +34,7 @@ permite generar reservas, logearse y al administrador agregar y borrar servicios
 |[js](/js)| Contiene las funciones extras necesarias para el funcionamiento de la pagina.) .|
 |[info](/views/info)| Contiene las pestañas que muestran informacion al usuario .|
 |[booking](/views/booking)| Contiene la pestaña de registro .|
-|[Auth](/views/auth)| Contiene las pestañas que necesitan autenticaci{on (logearse / registrarse para funcionar.) .|
+|[Auth](/views/auth)| Contiene las pestañas que necesitan autenticación (logearse / registrarse para funcionar.) .|
 |[lib](/lib)| Contiene las funciones necesarias para el funcionamiento de la pagina que necesitan el uso de espress.) .|
 
 ------------------------------------------
