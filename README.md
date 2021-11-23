@@ -96,7 +96,7 @@ Página web desarrollada para la materia de Programación Web del [Programa de I
 ###### Booostrap. (2021). Wikipedia, La enciclopedia libre, desde https://es.wikipedia.org/wiki/Bootstrap_(framework).
 ###### Express. (2021). Wikipedia, La enciclopedia libre, desde https://en.wikipedia.org/wiki/Express.js.
 ###### Node.js. (2021). Wikipedia, La enciclopedia libre, desde https://es.wikipedia.org/wiki/Node.js.
-###### Heroku (2021). Wikipedia, La enciclopedia libre, desde https://es.wikipedia.org/wiki/Heroku).
+###### Heroku (2021). Wikipedia, La enciclopedia libre, desde https://es.wikipedia.org/wiki/Heroku.
 ###### Mysql (2021). Wikipedia, La enciclopedia libre, desde https://es.wikipedia.org/wiki/MySQL.
 
 ------------------------------------------
