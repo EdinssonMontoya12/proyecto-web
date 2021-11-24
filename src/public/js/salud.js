@@ -12,7 +12,7 @@ const outputIMC = [[18.5 , 24.9 , "Normal", "Promedio"],
 const outputIccWomen = [[0, 0.80 , "Bajo"] , [0.81, 0.85, "Moderado"] , [0.86, Infinity, "Alto"]]      
 const outputIccMen = [[0, 0.95, "Bajo"] , [0.96, 1, "Moderado"] , [1, Infinity, "Alto"]]                   
 
-imc.addEventListener('click', () =>{
+imc.addEventListener('click', (e) =>{
     const altura = parseFloat(document.getElementById("altura").value);
     const peso = parseFloat(document.getElementById("peso").value);
     let resultIMC= peso/(altura*altura);
@@ -26,7 +26,7 @@ imc.addEventListener('click', () =>{
     }
 });
 
-icc.addEventListener('click' , () =>{
+icc.addEventListener('click' , (e) =>{
     const select = document.getElementById('gender')
     const gender = select.options[select.selectedIndex].value
     const struct = (gender == '1'?outputIccMen:outputIccWomen)
