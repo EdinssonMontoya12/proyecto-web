@@ -22,9 +22,8 @@ a, button, li{
                       "footer";
   grid-gap: 15px;
 }
-.hamb-menu{
-  display: none;
-}
+
+
 .nav-menu ul{
   margin: auto 0 ;
 }
@@ -38,9 +37,7 @@ a, button, li{
   text-decoration: none;
   color: colorText;
 }
-/* .nav-menu ul li:nth-child(4){
-  margin-right: 0; /*Para quitar el padding del ultimo item del navbar*/
-/* }*/
+
 .btnReserva{
   color: #ffffff;
   background-color: #2671d6;
@@ -131,7 +128,67 @@ a, button, li{
 .wrapIcon a{
   margin-right: 20px;
   font-size: 35px;
+  /* position: absolute !important; */
 }
+
+
+
+.nav-menuH{
+    display: none;
+    background-color: white;
+    top: 0;
+    right: 0;
+    position: fixed;
+    grid-area: header;
+    transition: all .5s ease;
+    width: 100%;
+    /* height: 400px; */
+    opacity: 90%;
+    z-index: 5;
+}
+
+.hamb-menu{
+  display: none;
+  margin: auto 0;
+  color: rgb(175, 209, 241);
+  text-align: right;
+  font-size: 40px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#menu ul{
+  list-style: none;
+}
+#menu ul:first-child{
+  margin-top: 65px;
+}
+#menu ul:last-child{
+  padding-bottom:0;
+  /* border-bottom: 1px solid rgb(176, 191, 189); */
+}
+#menu ul li a{
+  text-decoration: none;
+}
+
+#menu ul li{
+  padding:15px;
+  text-align: center;
+  border-bottom: 1px solid rgb(176, 191, 189);
+}
+
+#menu ul li:hover{
+  background-color: #bcfdf5;
+}
+
+.activo{
+    transform: translate(100%);
+}
+.opacity{
+  transition: all .5s ease;
+  filter: blur(10px);
+}
+/* RESPONSIVEEEEE */
 @media screen and (max-width: 1200px) {
   .servicios  > div{
     grid-template-areas:"texto"
@@ -144,11 +201,10 @@ a, button, li{
     display: none;
   }
   .hamb-menu{
-    margin: auto 0;
-    color: rgb(175, 209, 241);
-    text-align: right;
-    font-size: 40px;
-    cursor: pointer;
+    display: block;
+  }
+
+  .nav-menuH{
     display: block;
   }
 }
