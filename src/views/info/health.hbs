@@ -1,27 +1,59 @@
 <div class="container">
-{{>navigation}}
-    <div class = "health">
+    {{>navigation}}
+    <div class="health">
         <!-- Indice de masa corporal (ICM) = Peso en Kilogramos / (Altura en metros) -->
         <h3>Calcula indice de masa corportal (IMC)</h3>
-        <div class = "form-imc">
+        <div class="form">
             <input class="form-control" id="altura" type="number" placeholder="Ingrese su Altura en metros" aria-label="default input example">
             <input class="form-control" id="peso" type="number" placeholder="Ingrese su Peso en kilogramos" aria-label="default input example">
             <button id="IMC" type="button" class="btn btn-success">Ver IMC</button>
         </div>
-        <div id="xxx" class = "result-imc">
-            
-        </div>
+        <table id="tablaIMC" class="styled-table show">
+            <thead>
+                <tr>
+                    <th>IMC</th>
+                    <th>Clasificación</th>
+                    <th>Riesgo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="resultadoIMC"></td>
+                    <td id="clasificacion"></td>
+                    <td id= "riesgo"></td>
+                </tr>
+            </tbody>
+        </table>
+        <h1 id="msgIMC" style="color: red;"></h1>
+
         <!-- Indice de cintura y cadera (ICC) = medida cintura en centimetros  / medida cadera en centimetros -->
         <h3>Calcula indice de cintura y cadera (ICC)</h3>
-        <div class = "form-icc">
+        <div class="form">
+
+            <select id="gender" class="form-select" aria-label="Default select example">
+                <option selected>Selecciona tu genero</option>
+                <option value="1">Masculino</option>
+                <option value="2">Femenino</option>
+            </select>
+
             <input class="form-control" id="cintura" type="number" placeholder="Ingrese medida de cintura en centimetros" aria-label="default input example">
-            <input class="form-control" id="cadera" type="number" placeholder="Ingrese medida de cadera en centimetros" aria-label="default input example">
+            <input class="form-control" id="cadera" type="number"  placeholder="Ingrese medida de cadera en centimetros" aria-label="default input example">
             <button id="ICC" type="button" class="btn btn-success">Ver ICC</button>
         </div>
-        <div class = "result-icc toggle-icc">
-            asdfasdfasdf
-        </div>
-    </div>
-
-{{>footer}}
+        <table id="tablaICC" class="styled-table show">
+            <thead>
+                <tr>
+                    <th>ICC</th>
+                    <th>Riesgo de Salud</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="resultadoICC"></td>
+                    <td id="riesgoSalud"></td>
+                </tr>
+            </tbody>
+        </table>
+        <h1 id="msgICC" style="color: red;"></h1>
+    {{>footer}}
 </div>
