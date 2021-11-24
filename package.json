@@ -1,13 +1,13 @@
 {
   "name": "spa",
   "version": "1.0.0",
-  "description": "",
+  "description": "Desarrollo de la pagina web de un Spa para su promoción y gestión",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/"
   },
   "keywords": [],
-  "author": "",
+  "author": "Edinsson Montoya 1151901,  Felipe Alferez 1151902, Carlos Contreras 1151903, Said Lopez 1151925, Ramiro Contreras 1151972",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
