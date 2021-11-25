@@ -10,6 +10,10 @@
   margin: 0;
   padding: 0;
 }
+td{
+text-align: justify;
+}
+
 a, button, li{
   font-size: 18px;
   text-decoration: none;
@@ -114,6 +118,7 @@ a, button, li{
   grid-area: texto;
 }
 .infoServicio .info{
+  text-align: justify;
   padding-left:  10px;
 }
 .titleService{
