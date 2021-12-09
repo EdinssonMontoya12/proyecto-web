@@ -1,7 +1,27 @@
 {{> navigation}}
 
-<h1>Bienvenido {{user.nombre}} {{user.apellido}}</h1>
-
-<form action="/reserver" method="post">
-    <button class="btn btn-success" >Hacer reserva</button>
-</form>
+<div class="container p-4">
+    <h1 class="text-center mb-4">Bienvenido {{user.nombre}} {{user.apellido}}</h1>
+    <div class="row">
+        {{#each reservas}}
+        <div class="col-md-3 mb-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3 class="card-title">
+                        Reservada el
+                    </h3>
+                    <p>{{fecha fecha}}</p>
+                    <a class="btn btn-success" href="/reserver/view/{{id}}">Ver reserva</a>
+                </div>
+            </div>
+        </div>
+        {{else}}
+        <div class="col-md-4 mx-auto">
+            <div class="card card-body text-center">
+                <p>No hay reservas, ¿Desea realizar alguna?</p>
+                <a class="btn btn-success" href="/reserver">Reservar</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

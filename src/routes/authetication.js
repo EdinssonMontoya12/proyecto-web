@@ -2,6 +2,7 @@ const express = require('express')
 const rutas = express.Router()
 const path = require('path')
 const passport =  require('passport')
+const pool = require('../database')
 
 const authViews = '../views/auth'
 
@@ -27,8 +28,17 @@ rutas.post('/register', passport.authenticate('local.register', {
     failureFlash: true
 }))
 
-rutas.get('/profile', (req, res) => {
-    res.render(path.join(authViews, 'profile'))
+rutas.get('/profile', async (req, res) => {
+
+    const reservas =  await pool.query('select reserva.fecha, reserva.id from reserva where cedula_cliente = ?', [1151901])
+    console.log(reservas)
+
+    res.render(path.join(authViews, 'profile'), { reservas })
+})
+
+rutas.get('/logout', (req, res) => {
+    req.logOut()
+    res.render(path.join(authViews, 'login'))
 })
 
 module.exports = rutas

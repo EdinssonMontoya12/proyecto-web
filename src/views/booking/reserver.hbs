@@ -1,25 +1,19 @@
 {{> navigation}}
 <script>
-    const reserva = {{id_reserva}}
+    const reserva = {{ id_reserva }}
 </script>
 <div class="container">
-    <div class="row">
+    <div class="row mb-5">
         <form action="/reserve/add/service/{{id_reserva}}" method="post">
-            <div class="form-group">
+            <div class="input-group" data-placement="left" data-align="top" data-autoclose="true">
                 <select name="id_servicio" class="form-select" aria-label="Default select example">
-                   <option selected>Selecciona un servicio</option>
-                   {{#each services}}
-                        <option value="{{id}}">{{nombre}}</option>
-                   {{/each}}
+                    <option selected>Selecciona un servicio</option>
+                    {{#each services}}
+                    <option value="{{id}}">{{nombre}}</option>
+                    {{/each}}
                 </select>
-            </div>
-            <div class="form-group">
                 <input type="date" name="fecha_reserva" class="form-control">
-            </div>
-            <div class="form-group">
-                <input type="text" name="hora_reserva" class="form-control" placeholder="Hora reserva">
-            </div>
-            <div class="form-group">
+                <input type="time" class="form-control">
                 <button class="btn btn-success">Agregar servicio</button>
             </div>
         </form>
@@ -32,17 +26,19 @@
                     <th>Fecha</th>
                     <th>Hora</th>
                     <th>Precio</th>
+                    <th>Duración</th>
                 </tr>
             </thead>
             <tbody>
                 {{#each servicesReserva}}
-                    <tr>
-                        <th>{{nombre}}</th>
-                        <th>{{fecha_reserva}}</th>
-                        <th>{{hora_reserva}}</th>
-                        <th>{{costo}}</th>
-                        <th><a href="/delete/service/reserve/{{id}}/{{id_reserva}}">eliminar</a></th>
-                    </tr>
+                <tr>
+                    <th>{{nombre}}</th>
+                    <th>{{fecha fecha_reserva}}</th>
+                    <th>{{hora_reserva}}</th>
+                    <th>{{costo}}</th>
+                    <th>{{duracion}}</th>
+                    <th><a href="/delete/service/reserve/{{id}}/{{id_reserva}}">eliminar</a></th>
+                </tr>
                 {{/each}}
             </tbody>
         </table>
