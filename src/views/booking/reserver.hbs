@@ -1,7 +1,5 @@
 {{> navigation}}
-<script>
-    const reserva = {{ id_reserva }}
-</script>
+
 <div class="container">
     <div class="row mb-5">
         <form action="/reserve/add/service/{{id_reserva}}" method="post">
@@ -13,7 +11,7 @@
                     {{/each}}
                 </select>
                 <input type="date" name="fecha_reserva" class="form-control">
-                <input type="time" class="form-control">
+                <input type="time" name="hora_de_reserva" class="form-control">
                 <button class="btn btn-success">Agregar servicio</button>
             </div>
         </form>
@@ -34,14 +32,15 @@
                 <tr>
                     <th>{{nombre}}</th>
                     <th>{{fecha fecha_reserva}}</th>
-                    <th>{{hora_reserva}}</th>
-                    <th>{{costo}}</th>
-                    <th>{{duracion}}</th>
+                    <th>{{aHora hora_reserva}}</th>
+                    <th>${{costo}}</th>
+                    <th>{{aHora duracion}}</th>
                     <th><a href="/delete/service/reserve/{{id}}/{{id_reserva}}">eliminar</a></th>
                 </tr>
                 {{/each}}
             </tbody>
         </table>
     </div>
-    <a href="/profile" class="btn btn-success">aceptar</a>
+    <a href="/reserver/validate/{{id_reserva}}" class="btn btn-success">aceptar</a>
+    <a href="/reserver/cancel/{{id_reserva}}" class="btn btn-danger">cancelar</a>
 </div>

@@ -1,0 +1,37 @@
+{{> navigationAdmin}}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col mx-auto">
+            <form action="/service/update/{{id}}" method="post">
+                <div class="form-group style-div-form-register">
+                    <div class="input-group">
+                        <select name="id_tipo_servicio" class="form-select" aria-label="Default select example">
+                            <option value="{{servicio.id_tipo}}" selected>{{servicio.nombre_tipo}}</option>
+                            {{#each tipos}}
+                            <option value="{{id}}">{{nombre}}</option>
+                            {{/each}}
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group style-div-form-register">
+                    <input type="text" class="form-control" name="nombre" value="{{servicio.nombre}}" placeholder="Nombre" >
+                </div>
+                <div class="form-group style-div-form-register">
+                    <input type="text" class="form-control" name="costo" placeholder="Costo" value="{{servicio.costo}}">
+                </div>
+                <div class="form-group style-div-form-register">
+                    <input type="time" class="form-control" name="duracion" placeholder="Duracion" value="{{aHora servicio.duracion}}">
+                </div>
+                <div class="form-group style-div-form-register">
+                    <textarea type="text" class="form-control" name="descripcion"
+                        placeholder="Descripcion">{{servicio.descripcion}}</textarea>
+                </div>
+                <div class="form-group text-center pb-3">
+                    <button class="btn btn-success">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

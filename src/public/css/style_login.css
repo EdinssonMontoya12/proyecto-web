@@ -37,3 +37,7 @@
 .style-crear-login:hover{
     color: black;
 }
+
+.card-view-color{
+    background-color: rgb(198, 248, 248);
+}

@@ -1,0 +1,36 @@
+{{> navigationAdmin}}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col mx-auto">
+            <form action="/service/create" method="post">
+                <div class="form-group style-div-form-register">
+                    <div class="input-group">
+                        <select name="id_tipo_servicio" class="form-select me-2" aria-label="Default select example">
+                            <option selected>Selecciona el tipo de servicio</option>
+                            {{#each tipo}}
+                            <option value="{{id}}">{{nombre}}</option>
+                            {{/each}}
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group style-div-form-register">
+                    <input type="text" class="form-control" name="nombre" placeholder="Nombre">
+                </div>
+                <div class="form-group style-div-form-register">
+                    <input type="text" class="form-control" name="costo" placeholder="Costo">
+                </div>
+                <div class="form-group style-div-form-register">
+                    <input type="time" class="form-control" name="duracion_servicio" placeholder="Duracion">
+                </div>
+                <div class="form-group style-div-form-register">
+                    <textarea type="text" class="form-control" name="descripcion" placeholder="Descripcion"></textarea>
+                </div>
+                <div class="form-group text-center pb-3">
+                    <button class="btn btn-success">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+{{> navigationAdmin}}
+
+<div class="container">
+
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        {{#each usuarios}}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-heading{{cedula}}">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapse{{cedula}}" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapse{{cedula}}">
+                    {{nombre}} {{apellido}} {{cedula}}
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapse{{cedula}}" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-heading{{cedula}}">
+                {{#each reserva}}
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-9">
+                            <p> Realizada el {{fecha fecha}} </p>
+                        </div>
+                        <div class="col">
+                            <a class="btn btn-success" href="/reserver/view/admin/{{id}}">Ver reserva</a>
+                        </div>
+                        <div class="col">
+                            <a class="btn btn-danger" href="/reserver/delete/admin/{{id}}">Eliminar</a>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+</div>
