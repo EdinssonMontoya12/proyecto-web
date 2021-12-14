@@ -4,7 +4,8 @@
   "description": "Desarrollo de la pagina web de un Spa para su promoción y gestión",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/"
+    "dev": "nodemon src/",
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "Edinsson Montoya 1151901,  Felipe Alferez 1151902, Carlos Contreras 1151903, Said Lopez 1151925, Ramiro Contreras 1151972",
